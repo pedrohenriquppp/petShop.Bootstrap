@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(235, 232, 232) !important;
+    min-height: 100vh;
+}
+.vermelhoclaro{
+    background-color: #E87C7C;
+}
+
+.alinhar-centro{
+    position: relative;
+    right: 45%;
+}
+.texto{
+    font-family: Ribeye;
+    font-size: 75px;
+    color: #7DBAA5;
+}
+
+.fundo-prodotos{
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.fundo-prodotos:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.invisivel{
+    opacity: 0;
+    transition: 500ms;
+}
+.visivel{
+    opacity: 1;
+    transition: 500ms;
+}
+
+.aredondar{
+    border-radius: 15px;
+}

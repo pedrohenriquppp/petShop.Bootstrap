@@ -1,0 +1,167 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>PetShop · Bootstrap</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/sticky-footer-navbar/">
+
+    <!-- Bootstrap core CSS -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Favicons -->
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+
+  <!-- Fixed navbar -->
+  <nav class="navbar vermelhoclaro">
+    <a class="navbar-brand" href="#">
+    <img src="img/dog.png" width="100" class="d-inline-block align-top">
+    </a>
+    <p class="alinhar-centro texto">DogShop</p>
+  </nav>
+
+
+<!-- Begin page content -->
+<main role="main" class="flex-shrink-0">
+  <div class="container">
+    <nav>
+      <div class="d-flex justify-content-around mt-5">
+        <div class="fundo-prodotos">
+          <img onclick="visivel('s1')" id="racao1" src="img/braveco.png">
+          <p class="invisivel text-center" id="s1">R$ 55.50</p> 
+        </div>
+        <div class="fundo-prodotos">
+          <img onclick="visivel('s2')" id="racao2" src="img/golden.png">
+          <p class="invisivel text-center" id="s2">R$ 69.90</p>
+        </div>
+        <div class="fundo-prodotos">
+          <img onclick="visivel('s3')" id="racao3" src="img/hilt.png">
+          <p class="invisivel text-center" id="s3">R$ 49.90</p>        
+        </div>
+        <div class="fundo-prodotos">
+          <img onclick="visivel('s4')" id="racao4" src="img/prolan.png">
+          <p class="invisivel text-center" id="s4">R$ 37.80</p>
+        </div>
+      </div>
+      <div>
+      </div>
+    </nav>
+  </div>
+</main>
+
+<footer class="footer mt-5 py-3 vermelhoclaro">
+  <div class="container">
+
+  </div>
+</footer>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Contato</h1>
+    <p class="lead">Entre em contato conosco através das redes sociais abaixo ou se preferir ligue para a gente!</p>
+    <h4>(44) 3225-3264 ou (44) 99874-4333</h4>
+
+    <div class="d-flex justify-content-end">
+    <div id="alert" class="p-2 toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="30000">
+      <div class="toast-header">
+        <!-- <img src="..." class="rounded mr-2" alt="...">
+        -->
+        <strong class="mr-auto">Atendente</strong>
+        <small class="text-success">Online</small>
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="toast-body">
+        Olá! Como podemos te ajudar?
+      </div>
+
+     <div class="container row"> 
+       
+     <input class="form-control aredondar col-10" type="text"> 
+     <img class="close col-2" data-dismiss="toast" src="img/enviar.png" alt="">
+      
+    </div>
+    </div>
+    </div>
+
+
+  </div>
+</div>
+
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="https://www.facebook.com/">Facebook</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.instagram.com/">Instagram</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.twitter.com/">Twitter</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://br.linkedin.com/">LinkedIn</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://youtube.com.br">Youtube</a>
+  </li>
+</ul>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+
+  $('#alert').toast('show')
+  var s1 =  document.querySelector("#s1")
+  var s2 =  document.querySelector("#s2")
+  var s3 =  document.querySelector("#s3")
+  var s4 =  document.querySelector("#s4")
+  console.log(s1);
+  function visivel(e){
+      s1.classList.add('invisivel');
+      s2.classList.add('invisivel');
+      s3.classList.add('invisivel');
+      s4.classList.add('invisivel');
+      s1.classList.remove('visivel');
+      s2.classList.remove('visivel');
+      s3.classList.remove('visivel');
+      s4.classList.remove('visivel');
+      document.querySelector("#"+e).classList.remove('invisivel');
+      document.querySelector("#"+e).classList.add('visivel');
+  }
+  var produto1 =  document.querySelector("#racao1");
+  var produto2 =  document.querySelector("#racao2");
+  var produto3 =  document.querySelector("#racao3");
+  var produto4 =  document.querySelector("#racao4");
+  console.log()
+
+</script>
+
+</body>
+</html>
